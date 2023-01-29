@@ -1,4 +1,5 @@
 import React from "react";
+import PnrForm from "./PnrForm";
 
 const index = () => {
   return (
@@ -12,7 +13,7 @@ const index = () => {
         />
         <h5>Get PNR Status with Seat arrangment!</h5>
       </section>
-
+    <PnrForm/>
     </div>
   );
 };
