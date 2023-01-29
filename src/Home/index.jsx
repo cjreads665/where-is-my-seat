@@ -12,10 +12,7 @@ const index = () => {
         />
         <h5>Get PNR Status with Seat arrangment!</h5>
       </section>
-      <form action="">
-        <label htmlFor="">Enter PNR Number</label>
-        <input type="text" />
-      </form>
+
     </div>
   );
 };
