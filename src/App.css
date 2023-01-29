@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans', sans-serif;
+  overflow: hidden;
 }
 
 .navbar{
@@ -21,6 +22,8 @@
   font-size: 2rem;
   position: absolute;
   top: 0;
+  /* background-color: aqua; */
+  background: rgba(0,0,0,0.5);
 }
 
 .home-container > form{
@@ -50,14 +53,24 @@
   border: 2px solid black;
 }
 
+.home-container > form > label{
+  font-weight: 800;
+  color: white;
+}
+
 .gradient-on-image{
-  box-shadow: 1px 44px 36px 34px rgba(4,134,235,0.75);
+  /* box-shadow: 1px 44px 36px 34px rgba(4,134,235,0.75);
   -webkit-box-shadow: 1px 44px 36px 34px rgba(4,134,235,0.75);
-  -moz-box-shadow: 1px 44px 36px 34px rgba(4,134,235,0.75);
+  -moz-box-shadow: 1px 44px 36px 34px rgba(4,134,235,0.75); */
+  /* box-shadow: 0px 10px 30px 119px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 10px 30px 119px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 30px 119px rgba(0,0,0,0.75); */
   width: 100%;
+  z-index: 2;
 }
 .gradient-on-image+img{
-  width: 100%;
+  width: 120%;
+  /* z-index: -2; */
 }
 
 .home-container{
