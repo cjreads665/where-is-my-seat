@@ -4,19 +4,22 @@ const ResultTable = () => {
   return (
     <div className="table-container">
         <h5>Your Results</h5>
-      <table class="GeneratedTable">
-        <thead>
-          <th>Coach, Seat Number</th>
-          <th>Seat type</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>S3,36</td>
-            <td>SIDE UPPER</td>
-          </tr>
-          
-        </tbody>
-      </table>
+        <table className="pnr-table">
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Seat Number</th>
+				<th>Seat Type</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>CONFIRMED</td>
+				<td>S3 26</td>
+				<td>SIDE LOWER</td>
+			</tr>
+		</tbody>
+	</table>
     </div>
   );
 };
