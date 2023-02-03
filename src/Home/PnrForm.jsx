@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const PnrForm = () => {
+  const [pnr,setPnr] = useState()
+  const pattern = /^[0-9]*$/;
+  // console.log(pattern.test(888));
   return (
 <form action="">
     <label htmlFor="">Enter PNR Number</label>
-    <input type="text" />
+    <input type="text" onChange={(e)=>{
+      setPnr(e.target.value);
+      console.log(pnr);
+    }
+    
+    } />
     <button className='common-btn'>Get PNR Status</button>
   </form>
   )
