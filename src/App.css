@@ -124,6 +124,7 @@
   align-items: center;
   margin-bottom: 1rem;
   width: 100%;
+  z-index: 99;
 }
 
 .table-container h5{
@@ -170,12 +171,37 @@ a{
   .home-container > form{
     top: -20rem;
     margin-bottom: -10rem;
-    width: 50%;
+    width: 80%;
+    left: 5rem;
   }
-
 
   .gradient-on-image+img+h5{
     font-size: 5rem;
   }
+
+}
+
+@media (min-width: 1200px) {
+  .home-container > form{
+    top: -32rem;
+    margin-bottom: -10rem;
+    width: 80%;
+    left: 6rem;
+  }
+
+  .gradient-on-image+img+h5{
+    font-size: 6rem;
+  }
+
+  .table-container{
+   position: relative;
+   bottom: 17rem;
+   margin-bottom: -10rem;
+  }
+
+  .table-container h5{
+    color: white;
+  }
+
 
 }

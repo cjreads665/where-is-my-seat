@@ -18,6 +18,21 @@ const ResultTable = () => {
 				<td>S3 26</td>
 				<td>SIDE LOWER</td>
 			</tr>
+			<tr>
+				<td>CONFIRMED</td>
+				<td>S3 26</td>
+				<td>SIDE LOWER</td>
+			</tr>
+			<tr>
+				<td>CONFIRMED</td>
+				<td>S3 26</td>
+				<td>SIDE LOWER</td>
+			</tr>
+			<tr>
+				<td>CONFIRMED</td>
+				<td>S3 26</td>
+				<td>SIDE LOWER</td>
+			</tr>
 		</tbody>
 	</table>
     </div>

@@ -15,9 +15,8 @@ const index = () => {
         <h5>Get PNR Status with Seat arrangment!</h5>
       </section>
     <PnrForm/>
-    <div>
 <ResultTable/>
-    </div>
+
     </div>
   );
 };
