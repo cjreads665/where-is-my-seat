@@ -144,6 +144,19 @@ a{
   text-decoration: none;
 }
 
+footer{
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  height: 2rem;
+}
+
+footer a{
+  margin: 0 0.5rem;
+}
+
 @media (min-width: 480px) {
   .gradient-on-image+img{
     width: 100%;
@@ -202,6 +215,4 @@ a{
   .table-container h5{
     color: white;
   }
-
-
 }
