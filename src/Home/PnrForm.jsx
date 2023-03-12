@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 
 const PnrForm = () => {
@@ -13,7 +14,15 @@ const PnrForm = () => {
     }
     
     } />
-    <button className='common-btn'>Get PNR Status</button>
+    <button className='common-btn' 
+    onClick={(e)=>{
+      e.preventDefault();
+      axios.post(`${import.meta.env.VITE_BACKEND_URL}/get-status`,{
+        pnr
+      })
+      .then(res=>console.log(res))
+    }}
+    >Get PNR Status</button>
   </form>
   )
 }
