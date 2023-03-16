@@ -1,10 +1,14 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { toast } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { updateData } from '../redux/pnrSlice';
+
 const PnrForm = () => {
   const [pnr,setPnr] = useState()
   const pattern = /^[0-9]*$/;
   // console.log(pattern.test(888));
+  const dispatch = useDispatch();
 
   return (
 <form action="">
@@ -23,10 +27,12 @@ const PnrForm = () => {
         pnr
       })
       .then(res=>{
+        console.log(res.data.status);
+        dispatch(updateData(res.data.status))
         toast.update(id, {render: "Successfully fetched status", type: "success", isLoading: false,autoClose: 2000});
       })
       .catch(e=>{
-        toast.update(id, {render: "Something went wrong", type: "error", isLoading: false,autoClose: 2000 });
+        toast.update(id, {render: "Please check your PNR", type: "error", isLoading: false,autoClose: 2000 });
       })
     }}
     >Get PNR Status</button>
