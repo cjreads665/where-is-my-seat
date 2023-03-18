@@ -17,7 +17,6 @@ const PnrForm = () => {
       setPnr(e.target.value);
       console.log(pnr);
     }
-    
     } />
     <button className='common-btn' 
     onClick={(e)=>{
