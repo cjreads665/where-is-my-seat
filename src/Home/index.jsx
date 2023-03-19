@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import PnrForm from "./PnrForm";
 import ResultTable from "./ResultTable";
 import axios from "axios";
 const index = () => {
-  axios.get(`${import.meta.env.VITE_BACKEND_LIVE_URL}`)
+  axios.get(`${import.meta.env.VITE_BACKEND_LIVE_URL}`);
+  const [isClicked,setIsClicked] = useState(false)
+  /**
+   * do not show the table
+   * when user clicks, do not show
+   * when data is loaded - show
+   * when user clicks, do not show
+   */
   return (
     <div className="home-container">
         {/**cta section */}
@@ -15,8 +22,8 @@ const index = () => {
         />
         <h5>Get PNR Status with Seat arrangment!</h5>
       </section>
-    <PnrForm/>
-<ResultTable/>
+    <PnrForm isClicked={isClicked} setIsClicked={setIsClicked} />
+    {isClicked? <ResultTable/> : ""}
 
     </div>
   );
