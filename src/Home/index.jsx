@@ -1,8 +1,9 @@
 import React from "react";
 import PnrForm from "./PnrForm";
 import ResultTable from "./ResultTable";
-
+import axios from "axios";
 const index = () => {
+  axios.get(`${import.meta.env.VITE_BACKEND_LIVE_URL}`)
   return (
     <div className="home-container">
         {/**cta section */}
