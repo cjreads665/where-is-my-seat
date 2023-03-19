@@ -4,12 +4,13 @@ import { useSelector } from "react-redux";
 // 6845430634
 const ResultTable = () => {
 	const data = useSelector((state) =>state.pnr.data);
-	const tableData= data?.map((status)=>{
-		console.log(status);
-		return 			<tr>
+	const tableData= data?.map((status,i)=>{
+		console.log(i);
+		console.log(status?.seatType?.toUpperCase());
+		return 			<tr key={i}>
 		<td>{status.currentStatus}</td>
 		<td>{status.bookingStatus}</td>
-		<td>SIDE LOWER</td>
+		<td>{status?.seatType?.toUpperCase()}</td>
 	</tr>
 	})
   return (

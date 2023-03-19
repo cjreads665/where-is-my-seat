@@ -22,7 +22,7 @@ const PnrForm = ({isClicked,setIsClicked}) => {
       e.preventDefault();
       setIsClicked(false)
       const id = toast.loading("Please wait...")
-      axios.post(`${import.meta.env.VITE_BACKEND_DEV_URL}/get-status`,{
+      axios.post(`${import.meta.env.VITE_BACKEND_LIVE_URL}/get-status`,{
         pnr
       })
       .then(res=>{
